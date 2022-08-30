@@ -9,7 +9,8 @@ function increment () {
 
 
 function save () {
-    let saveState = ` ${count} - `;
-    document.getElementById("save-el").innerText += saveState;
-    console.log (count);
+    let saveState = `${count} - `;
+    document.getElementById("save-el").textContent += saveState;
+    document.getElementById("count-el").textContent = 0;
+    count = 0;
 }
